@@ -35,9 +35,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |   `  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  | F9   | F10  |  <-  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  Tab |      |      |      |  F11 |  F12 |                    | HOME | PGUP | PGDN | END  | PRINT|  \   |
+ * |  Tab |  '   |      |  =   |  F11 |  F12 |                    | HOME | PGUP | PGDN | END  | PRINT|  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  ESC | INS  |      | DEL  |      |      |-------.    ,-------| Left | Down |  Up  | Right|      |  ENT |
+ * |  ESC |  +   |      |  "   |      |      |-------.    ,-------| Left | Down |  Up  | Right|      |  ENT |
  * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
  * | LCTRL|      |      |      |      |      |-------|    |-------|  INS | DEL  |      |      |      | CAPS |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -47,8 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT(
   XXXXXXX, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,  _______,
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_F11,  KC_F12,                    KC_HOME, KC_PGUP, KC_PGDN, KC_END,   KC_PSCR, _______,
-  _______, KC_INS,  XXXXXXX, KC_DEL,  XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, _______,
+  _______, KC_QUOT, XXXXXXX, KC_EQL,  KC_F11,  KC_F12,                    KC_HOME, KC_PGUP, KC_PGDN, KC_END,   KC_PSCR, _______,
+  _______, KC_PPLS, XXXXXXX, KC_DQUO, XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, _______,
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, KC_INS,  KC_DEL,  XXXXXXX, XXXXXXX,  XXXXXXX, KC_CAPS,
                              _______, _______, _______, _______, _______,  XXXXXXX, XXXXXXX, XXXXXXX
 ),
