@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* QWERTY
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |  ESC |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  <-  |
+ * |   `  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |  <-  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |  Tab |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
@@ -40,18 +40,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |  Tab |  '   |      |  =   |  F11 |  F12 |                    | HOME | PGUP | PGDN | END  | PRINT|  \   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |  ESC |  +   |      |  "   |      |      |-------.    ,-------| Left | Down |  Up  | Right|      |  ENT |
+ * | CAPS |  +   |      |  "   |      |      |-------.    ,-------| Left | Down |  Up  | Right|      |  ENT |
  * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
  * | LCTRL|      |      |      |      |      |-------|    |-------|  INS | DEL  |      |      |      | CAPS |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   |LSHIFT| LGUI | LAlt | / LOWER /       \Space \  |  -   |  =   |  '   |
+ *                   |LSHIFT| LGUI | LAlt | / LOWER /       \Space \  |      |      |      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
 [_LOWER] = LAYOUT(
   XXXXXXX, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,    KC_F10,  _______,
   _______, KC_QUOT, XXXXXXX, KC_EQL,  KC_F11,  KC_F12,                    KC_HOME, KC_PGDN, KC_PGUP, KC_END,   KC_PSCR, _______,
-  _______, KC_PPLS, XXXXXXX, KC_DQUO, XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, _______,
+  KC_CAPS, KC_PPLS, XXXXXXX, KC_DQUO, XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, _______,
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, KC_INS,  KC_DEL,  XXXXXXX, XXXXXXX,  XXXXXXX, KC_CAPS,
                              _______, _______, _______, _______, _______,  XXXXXXX, XXXXXXX, XXXXXXX
 ),
@@ -107,6 +107,6 @@ bool oled_task_user(void) {
         // Right side
         render_bongocat();
     }
-	
+
 	return 0;
 }
