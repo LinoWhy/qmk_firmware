@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|   (   |    |    )  |------+------+------+------+------+------|
  * | LCTRL|      |      |      |      |      |-------|    |-------|  INS | DEL  |      |      |      | CAPS |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   |LSHIFT| LGUI | LAlt | / LOWER /       \Space \  |      |      |      |
+ *                   |LSHIFT| RGUI | LAlt | / LOWER /       \Space \  |      |      |      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, KC_QUOT, XXXXXXX, KC_EQL,  KC_F11,  KC_F12,                    KC_HOME, KC_PGDN, KC_PGUP, KC_END,   KC_PSCR, _______,
   KC_CAPS, KC_PPLS, XXXXXXX, KC_DQUO, XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, XXXXXXX, _______,
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, KC_INS,  KC_DEL,  XXXXXXX, XXXXXXX,  XXXXXXX, KC_CAPS,
-                             _______, _______, _______, _______, _______,  XXXXXXX, XXXXXXX, XXXXXXX
+                             _______, KC_RGUI, _______, _______, _______,  XXXXXXX, XXXXXXX, XXXXXXX
 ),
 
 [_RAISE] = LAYOUT(
